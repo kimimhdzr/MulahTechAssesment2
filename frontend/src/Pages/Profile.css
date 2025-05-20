@@ -1,0 +1,132 @@
+.regis-container {
+  width: 640px;
+  height: 1136px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  background: white;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+/* Top section (1fr) */
+.profile-container-app-name {
+  flex: 1;
+  margin-top: 20px;
+  font-weight: 700;
+  font-size: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: rgb(247, 135, 37);
+}
+/* Middle section (5.5fr) */
+.profile-card {
+  background-color: #fff;
+  border-radius: 16px;
+  padding: 30px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+  max-width: 520px;
+  width: 100%;
+  margin: 0 auto;
+  transition: transform 0.2s ease;
+}
+
+.profile-card:hover, .points-card:hover {
+  transform: translateY(-2px);
+}
+
+.profile-main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.profile-main h1 {
+  font-size: 55px;
+  margin-bottom: 40px;
+  color: #222;
+}
+
+.profile-card p {
+  font-size: 20px;
+  margin-bottom: 20px;
+  color: #444;
+}
+
+.profile-card .label {
+  font-weight: 600;
+  color: rgb(247, 135, 37);
+  margin-right: 8px;
+}
+
+/* Bottom section (1.5fr) */
+.regis-container .powered-by {
+  flex: 1.5;
+  font-size: 14px;
+  color: #999;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.powered-by a {
+  color: #0078d7;
+  text-decoration: none;
+}
+
+.powered-by a:hover {
+  text-decoration: underline;
+}
+
+/* Responsive */
+@media (max-width: 640px) {
+  .regis-container {
+    width: 100vw;
+    height: 100vh;
+    border-radius: 0;
+  }
+
+  .regis-container .profile-main {
+    padding: 0 20px;
+  }
+}
+
+
+/* Points Card */
+.points-card {
+  background: linear-gradient(135deg, #f78b1f, #ffcc70);
+  color: white;
+  padding: 30px;
+  width: 100%;
+  margin: 0 auto;
+  border-radius: 20px;
+  max-width: 520px;
+  text-align: center;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+  margin-bottom: 30px;
+  transition: transform 0.2s ease;
+}
+
+.points-card h2 {
+  margin: 0;
+  font-size: 28px;
+  font-weight: 700;
+}
+
+.points-value {
+  font-size: 48px;
+  font-weight: 800;
+  margin: 16px 0;
+}
+
+.points-sub {
+  font-size: 16px;
+  color: rgba(255, 255, 255, 0.9);
+}

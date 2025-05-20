@@ -1,0 +1,126 @@
+.login-container {
+  width: 640px;
+  height: 1136px;
+  margin: 0 auto;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  display: flex;
+  flex-direction: column;
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+/* App name (top section: 2fr) */
+.login-container .app-name {
+  flex: 2;
+  font-weight: 700;
+  font-size: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: rgb(247, 135, 37);
+  padding-top: 20px;
+}
+
+/* Main content (middle section: 4.5fr) */
+.login-main {
+  flex: 4.5;
+  padding: 0 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: start;
+}
+
+.login-main h1 {
+  margin: 0px;
+  font-size: 70px;
+  color: #222;
+}
+
+.login-main p {
+  font-weight: 600;
+  font-size: 24px;
+  color: rgb(247, 135, 37);
+  margin-bottom: 50px;
+  margin-top: 10px;
+}
+
+/* Phone input */
+.phone-input {
+  width: 100%;
+  max-width: 500px;
+  padding: 14px 18px;
+  font-size: 20px;
+  border-radius: 8px;
+  border: 1.8px solid #ccc;
+  outline: none;
+  margin-bottom: 40px;
+  box-sizing: border-box;
+  transition: border-color 0.3s ease;
+}
+
+.phone-input:focus {
+  border-color: rgb(219, 107, 9);
+}
+
+/* Button */
+.check-btn {
+  width: 100%;
+  max-width: 500px;
+  padding: 16px 0;
+  font-size: 22px;
+  color: white;
+  background-color: rgb(247, 135, 37);
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+}
+
+.check-btn:hover {
+  background-color: rgb(219, 107, 9);
+}
+
+/* Footer (bottom section: 1.5fr) */
+.powered-by {
+  flex: 1.5;
+  font-size: 14px;
+  color: #999;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.powered-by a {
+  color: #0078d7;
+  text-decoration: none;
+}
+
+.powered-by a:hover {
+  text-decoration: underline;
+}
+
+/* Responsive fallback */
+@media (max-width: 640px) {
+  .login-container {
+    width: 100vw;
+    height: 100vh;
+    border-radius: 0;
+  }
+
+  .login-main {
+    padding: 0 20px;
+  }
+
+  .phone-input,
+  .check-btn {
+    max-width: 100%;
+  }
+}
