@@ -24,17 +24,22 @@
   color: rgb(247, 135, 37);
 }
 /* Middle section (5.5fr) */
+.profile-card,
+.points-card {
+  width: 100%;
+  max-width: 500px;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
 .profile-card {
   background-color: #fff;
   border-radius: 16px;
-  padding: 30px;
+  padding: 24px 50px;
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
-  max-width: 520px;
-  width: 100%;
-  margin: 0 auto;
   transition: transform 0.2s ease;
+  word-break: break-word;
 }
-
 .profile-card:hover, .points-card:hover {
   transform: translateY(-2px);
 }
@@ -103,15 +108,13 @@
 .points-card {
   background: linear-gradient(135deg, #f78b1f, #ffcc70);
   color: white;
-  padding: 30px;
-  width: 100%;
-  margin: 0 auto;
+  padding: 24px;
   border-radius: 20px;
-  max-width: 520px;
   text-align: center;
   box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
-  margin-bottom: 30px;
+  margin-bottom: 24px;
   transition: transform 0.2s ease;
+  word-break: break-word;
 }
 
 .points-card h2 {
@@ -129,4 +132,12 @@
 .points-sub {
   font-size: 16px;
   color: rgba(255, 255, 255, 0.9);
+}
+
+@media (max-width: 600px) {
+  .profile-card,
+  .points-card {
+    padding: 16px;
+    border-radius: 12px;
+  }
 }
